@@ -1,0 +1,56 @@
+.header_top {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    height: 50px;
+    text-align: center;
+    justify-items: center;
+}
+.header_menu {
+    background-color: rgb(76, 153, 240);
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.header_top .header_logo h1 {
+    text-align: center;
+    font-family: "Archivo", sans-serif;
+    padding-top: 10px;
+}
+
+.header_top .carrito {
+    background-color: rgb(76, 153, 240);
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: "Archivo", sans-serif;
+    padding-top: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+.lista {
+    list-style-type: none;
+    background-color: rgb(76, 153, 240);
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.lista-item {
+    width: 90px;
+    height: auto;
+}
+
+.itemTexto {
+    font-size: 11px;
+    color: aliceblue;
+    font-family: "Archivo", sans-serif;
+    text-decoration: none;
+}
