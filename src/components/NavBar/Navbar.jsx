@@ -1,6 +1,7 @@
 import React from 'react';
-import './NavBar.css'
+import './Navbar.css'
 import { CartWidget } from '../CartWidget/CartWidget.jsx';
+import { Categorias } from './Categorias/Categorias';
 export const Navbar = () => {
     return ( 
         <nav>
@@ -14,28 +15,7 @@ export const Navbar = () => {
                 <CartWidget counter={1} />
             </div>
             
-            <ul className="lista">
-                <li className="lista__item">
-                    <a className="itemTexto" href="true" target="_self"><span className="material-symbols-outlined">
-                        sell
-                    </span><h4>OFERTAS</h4></a>
-                </li>
-                <li className="lista__item">
-                    <a className="itemTexto" href="true" target="_self"><span className="material-symbols-outlined">
-                        computer
-                    </span><h4>NOTEBOOKS</h4></a>
-                </li>
-                <li className="lista__item">
-                    <a className="itemTexto" href="true" target="_self"><span className="material-symbols-outlined">
-                        smartphone
-                    </span><h4>CELULARES</h4></a>
-                </li>
-                <li className="lista__item">
-                    <a className="itemTexto" href="true" target="_self"><span className="material-symbols-outlined">
-                        desktop_windows
-                    </span><h4>PC ESCRITORIO</h4></a>
-                </li>
-            </ul>
+            <Categorias />
             
         </nav>
 

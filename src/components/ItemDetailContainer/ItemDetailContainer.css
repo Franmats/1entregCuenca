@@ -1,0 +1,9 @@
+.cardDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    font-family: "Archivo", sans-serif;
+}
+

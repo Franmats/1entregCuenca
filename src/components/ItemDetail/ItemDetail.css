@@ -1,0 +1,11 @@
+.cardDetail div {
+    justify-items: center;
+}
+.cardDetail div img {
+    width: 350px;
+    height: 350px;
+}
+.detailDes {
+    font-size: 18px;
+}
+
