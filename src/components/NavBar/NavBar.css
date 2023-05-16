@@ -1,47 +1,57 @@
+/* ESTILOS DEL NAVBAR */
 .header_top {
-    display: grid;
-    grid-template-columns: 0.5fr 3fr 0.5fr;
-    height: 50px;
-    text-align: center;
-    justify-items: center;
+    display:block;
+
 }
 .header_menu {
-    background-color: rgb(76, 153, 240);
-    font-size: 15px;
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
+    display: none;
 }
-.header_top .header_logo h1 {
-    text-align: center;
-    font-family: "Archivo", sans-serif;
-    padding-top: 10px;
+.header_top .header_logo {
+    display: none;
+}
+.header_logo_desk {
+    color: white;
 }
 
 .header_top .carrito {
-    background-color: rgb(76, 153, 240);
+    
     font-size: 15px;
     width: 100%;
     height: 100%;
-    justify-content: center;
     font-family: "Archivo", sans-serif;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.header_top .carrito button ,.header_top .carrito button a  {
+    background-color: rgb(76, 153, 240);/* aqui */
+    border:none;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 nav {
+    display: flex;
+    background-color: rgb(76, 153, 240);
+    flex-direction: row-reverse;
+    justify-content: space-around;
     text-align: center;
+    
 }
 
 .lista {
     list-style-type: none;
-    background-color: rgb(76, 153, 240);
     margin-bottom: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     height: 80px;
-    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+
 }
 
 .lista-item {
@@ -55,3 +65,69 @@ nav {
     font-family: "Archivo", sans-serif;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .header_top {
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        height: 70px;
+        text-align: center;
+        justify-items: center;
+        color: white;
+        box-shadow: rgba(255, 255, 255, 0.08) 0px 2px 4px 0px;
+    }
+    .header_menu {
+        display: block;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    .header_top .header_logo {
+        display: block;
+        text-align: center;
+        font-family: "Archivo", sans-serif;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .header_top .header_logo {
+        text-align: center;
+        font-family: "Archivo", sans-serif;
+        padding-top: 10px;
+    }
+    
+    .header_top .carrito {
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        font-family: "Archivo", sans-serif;
+        padding-top: 10px;
+    }
+
+    .lista {
+        list-style-type: none;
+        background-color: rgb(76, 153, 240);
+        margin-bottom: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        padding-top: 10px;
+        padding-right: 40px;
+        gap: 27px;
+    }
+
+    nav {
+        display: block;
+
+        text-align: center;
+    }
+
+    .header_logo_desk {
+        display: none;
+    }
+    
+  }

@@ -10,7 +10,7 @@ export const Item = ({item}) => {
           <div>{item.nombre}</div>
           <span><b>${item.precio}</b></span>
           <div>Stock: {item.stock}</div>
-          <Link className='nav-link' to={`/product/${item.nombretag}`}><button className='btn'>Ver Producto</button></Link>
+          <Link className='nav-link' to={`/product/${item.id}`}><button className='btn'>Ver Producto</button></Link>
       </div>    
   </div> 
 

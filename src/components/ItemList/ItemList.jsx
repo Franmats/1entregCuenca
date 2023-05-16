@@ -1,10 +1,17 @@
 // Recibir una array de productos y transformarlo
 import { Item } from '../Item/Item.jsx';
-export const ItemList = ({productos}) => {
+import { ItemCart } from '../ItemCart/ItemCart.jsx';
+export const ItemList = ({productos,plantilla}) => {
     
     return (
-        <>
-            {productos.map(producto => <Item key={producto.id} item={producto}/>)}
+        <>  
+            {
+                plantilla === "Item" ?
+                productos.map(producto => <Item key={producto.id} item={producto}/>)
+                :
+                productos.map(producto => <ItemCart key={producto.id} item={producto}/>)
+            }
+            
         </>
     );
 }
