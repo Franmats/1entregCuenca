@@ -71,16 +71,16 @@ export const Checkout = () => {
                                 <div className="row">
                                 <div className="col-50">
                                     <h3>Datos del Comprador</h3>
-                                    <label htmlFor="fname"><i  /> Nombre Completo</label>
+                                    <label htmlFor="name"><i  /> Nombre Completo</label>
                                     <input type="text" name="name"/>
                                     <label htmlFor="email" ><i  /> Email</label>
                                     <input type="email" name="email" />
-                                    <label htmlFor="email"><i  /> Vuelva a Ingresar Email</label>
+                                    <label htmlFor="emailrepetido"><i  /> Vuelva a Ingresar Email</label>
                                     <input type="email" name="emailrepetido" />
-                                    <label htmlFor="ccnum">Numero de Celular</label>
-                                    <input type="text" name="cardnumber"/>
+                                    <label htmlFor="number">Numero de Celular</label>
+                                    <input type="text" name="number"/>
                                     <label htmlFor="dni"><i  /> DNI</label>
-                                    <input type="number" name="address" />
+                                    <input type="number" name="dni" />
                                     <label htmlFor="city"><i  /> Ciudad</label>
                                     <input type="text" name="city"/>
                                     <div className="row">
